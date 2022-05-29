@@ -1,0 +1,140 @@
+
+@media screen and (max-width: 601px) {
+   .bigScreen{
+      display: none;
+   }
+   .section {
+      width: 100%;
+      background: #FFEBEB;
+      
+   }
+   .header{
+      /* padding: 3.47vw 4.26vw; */
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      align-items: center;
+      row-gap: 3.47vw;
+      justify-items: stretch;
+      
+   }
+   .header p{
+      padding-top: 3.47vw ;
+      font-family: 'Nunito Sans',
+      sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      line-height: 4.48vw;
+      text-align: center;
+      width: 100%;
+      color: #5A5656;
+   }
+   .header .anchor {
+      display: flex;
+      justify-content: center;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.2vw;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: -0.025em;
+      -webkit-text-decoration:line;
+            text-decoration:line;
+      color: #FC3C3C;
+   }
+   .smallScreen{
+      display: grid;
+      grid-template-columns:  1fr auto;
+      /* justify-content: center; */
+      width: 100%;
+      padding: 3.73vw 4.26vw;
+      background-color: #fff;
+      align-items: center;
+      padding-bottom: 1.5vw;
+   }
+   .smallScreen a{
+      text-decoration: none;
+   }
+   .smallScreen a img{
+      width: 27.73vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+         margin:0 auto
+   }
+   .smallScreen button{
+      border: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+   }
+   .smallScreen button img{
+      width: 8.533vw;
+      outline: none;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+   .welcome{
+      width: 91.46vw;
+      margin: 0 auto;
+      padding-top: 10.66vw;
+   }
+   .carousel{
+      background: linear-gradient(116.02deg, rgba(90, 86, 86, 0.4) 0%, rgba(252, 60, 60, 0.2) 100.51%);
+      mix-blend-mode: multiply;
+      border-radius: 2.13vw;
+      height: 85.3vw;
+      position: relative;
+   }
+   .carousel img{
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin: 0 auto;
+   }
+   .carousel img:hover{
+      opacity: 0.7;
+   }
+   .controls {
+      position: absolute;
+      width: 100%;
+      right: 0;
+      top:87% ;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   .controls button{
+      background: rgba(252, 60, 60, 0.2);
+      border-radius: 2.13vw 0 0 0;
+      outline: none;
+      border: none;
+      display: flex;
+      width: 10.6vw;
+      cursor: pointer;
+      height: 10.6vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+   }
+   .controls button img{
+      width: 5.33vw;
+      height: 5.33vw;
+      margin: 0 auto;
+      padding: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+}
+@media screen and (min-width: 602px) {
+   .smallScreen {
+      display: none;
+   }
+   .section {
+      width: 100%;
+      background: #FFEBEB;
+   }
+}

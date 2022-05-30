@@ -1,0 +1,74 @@
+@media screen and (max-width: 601px) {
+   .about{
+      margin-top: 2.828vw;
+      position: relative;
+      width: 100%;
+      
+   }
+   .about img{
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   .aboutSection{
+      position: relative;
+      top: 16vw;
+      
+      background: #FC3C3C;
+      padding-top: 12.8vw;
+      padding-bottom: 19.2vw;
+   }
+   .aboutSection .title{
+      width: 91.46vw;
+      margin: 0 auto;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4vw;
+      line-height: 140%;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      margin-bottom: 12.8vw;
+   }
+   .aboutSection .title span {
+      padding-bottom: 2.13vw;
+      border-bottom: solid 0.53vw #fff;
+   }
+
+   .paragraphs{
+      width: 91.46vw;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 8.53vw;
+      align-items: center;
+   }
+   
+   .para1{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.27vw;
+      line-height: 5.86vw;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      width: 100%;
+   }
+   .para2{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4.81vw;
+      line-height: 150%;
+      letter-spacing: -0.025em;
+      color: #FFFFFF
+   }
+   .para3{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.26vw;
+      line-height: 5.87vw;
+      letter-spacing: -0.025em;;
+      color: #FFFFFF
+   }
+}

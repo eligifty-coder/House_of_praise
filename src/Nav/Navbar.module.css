@@ -6,6 +6,7 @@
    .section {
       width: 100%;
       background: #FFEBEB;
+      position: relative;
       
    }
    .header{
@@ -131,7 +132,7 @@
    }
    .controls button.red{
       background: #FC3C3C;
-      border-radius: 0px 0px 8px 0px;
+      border-radius: 0 0 2.13 0;
    }
    .title{
       width: 91.46vw;
@@ -197,7 +198,227 @@
       display: none;
    }
    .section {
+      padding-top: 1.11vw;
       width: 100%;
       background: #FFEBEB;
+      padding-bottom: 7.430vw;
    }
+   .header{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1.11vw;
+      align-items: center;
+   }
+   .start{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5vw;
+   }
+   .start p{
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.83vw;
+      line-height: 1.11vw;
+      text-align: center;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .start a{
+      color: #FC3C3C;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 0.83vw;
+      line-height: 1.11vw;
+      text-align: center;
+      letter-spacing: -0.025em;
+   }
+   .screen{
+      background-color: #fff;
+      width: 100%;
+   }
+   .bigScreen{
+      width: 90%;
+      padding: 1.562vw  0;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+   
+      
+   }
+   .navigations{
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      width: 100%;
+      justify-self: flex-start;
+      
+
+   }
+   .navigations .lists {
+      width:42.51vw;
+      gap: 0.81vw;
+      display: flex;
+      gap: 1.11vw;
+      align-items: center;
+      justify-content: flex-start;
+   }
+   .navigations .lists a {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25vw;
+      line-height: 2.78vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .navigations .get{
+      width:100%;
+      padding: 0.902vw 1.66vw;
+      margin: 0 auto;
+      background: #FC3C3C;
+      border-radius: 0.486vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.53vw;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      text-decoration: none;
+      display: grid;
+      place-items: center;
+      transition: all .3 ease-in-out;
+   }
+   .navigations .get:hover{
+      opacity: .8;
+   }
+   .welcome{
+      display: flex;
+      width: 90vw;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding-top: 5.55vw;
+      
+      align-items: center;
+   }
+   .carousel{
+      order: 2;
+   }
+   .lower{
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      row-gap: 4.30vw;
+   }
+   .lower .title{
+      width: 38.75vw;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.88vw;
+      line-height: 4.8vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F
+   }
+   .lower .title span{
+      color: #FC3C3C;
+      display: block;
+      position: relative;
+      z-index: 10;
+   }
+   .lower .title span::after{
+      color: #FC3C3C;
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      background: #FED8D8;
+      width: 28.95vw;
+      height: 1.666vw;
+      z-index: -10;
+   }
+   .lower .actions{
+      display: flex;
+      align-items: center;
+      gap: 1.11vw;
+   }
+   .lower .actions  a{
+      width: 16.66vw;
+      height: 3.88vw;
+      background: #FC3C3C;
+      box-shadow: 0 0.416vw 2.22vw rgba(0, 0, 0, 0.25);
+      display: grid;
+      place-items: center;
+      border-radius: 0.55vw;
+      transition: all .3s ease-in-out;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.52vw;
+      letter-spacing: -0.025em;
+      color: #F4F4F4;
+      text-decoration: none;
+   }
+   .lower .actions a:hover{
+      opacity: .8;
+   }
+   .lower .actions a.transparent{
+      background: transparent;
+      border: 0.0694vw solid #FC3C3C;
+      -webkit-filter: drop-shadow(0 0.417vw 2.22vw rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0 0.417vw 2.22vw rgba(0, 0, 0, 0.25));
+      color: #FC3C3C;
+      width: 14.51vw;
+   }
+   .carousel{
+      width: 100%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      position: relative;
+      
+   }
+   .carousel .display {
+      width: 48.68vw;
+      height: 33.75vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 0.55vw;
+      transition: all .3s ease-in-out;
+   }
+   .carousel .display:hover{
+      background: linear-gradient(116.02deg, rgba(90, 86, 86, 0.4) 0%, rgba(252, 60, 60, 0.2) 100.51%);
+      mix-blend-mode: multiply;
+   }
+   .carousel .controls{
+      position: absolute;
+      right: 1.2vw;
+      bottom: 0;
+   }
+   .carousel .controls button{
+      outline: none;
+      border: none;
+      background-color: transparent;
+      height: 2.77vw;
+      width: 2.77vw;
+      background: rgba(252, 60, 60, 0.2);
+      border-radius: 0.55vw 0 0 0;
+      margin: 0 auto;
+      cursor: pointer;
+   }
+   .carousel .controls button img{
+      width: 1.38vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+   }
+   .carousel .controls button.red {
+      background: #FC3C3C;
+      border-radius: 0 0 2.13 0;
+   }
+   
 }

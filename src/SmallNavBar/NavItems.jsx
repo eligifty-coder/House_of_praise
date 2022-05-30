@@ -1,14 +1,14 @@
 import React from 'react'
 import Cancel from '../images/cancel.png'
-import classes from './Navbar.module.css'
+import classes from './NavItems.module.css'
 import Facebook from '../images/facebook.png'
 import Youtube from '../images/youtube.png'
 import Whatsapp from '../images/whatsapp.png'
 import Instagram from '../images/instagram.png'
 
-const NavItems = () => {
+const NavItems = ({ cancelClick}) => {
    return (
-      <nav className={classes.nav}>
+      <div className={classes.nav}>
          <div className={classes.top} >
             <ul className={classes.lists}>
                <li>
@@ -30,10 +30,12 @@ const NavItems = () => {
                   <a href="#giving">Giving</a>
                </li>
             </ul>
-            <img src={Cancel} alt="cancel" />
+            <button onClick={cancelClick}>
+               <img src={Cancel} alt="cancel" />
+            </button>
          </div>
          <div className={classes.bottom}>
-            <button>Send us a message</button>
+            <a href='about'  className={classes.anchor} >Send us a message</a>
             <ul className={classes.icons} >
                <li>
                   <a href="#">
@@ -52,7 +54,7 @@ const NavItems = () => {
                </li>
             </ul>
          </div>
-      </nav>
+      </div>
    )
 }
 

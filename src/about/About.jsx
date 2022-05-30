@@ -4,7 +4,7 @@ import Overlay from  '../images/aboutOverlay.png'
 const About = () => {
    return (
       <div className={classes.about}>
-         <img src={Overlay} alt="overlay" />
+         <img src={Overlay} alt="overlay" className={classes.overlay}/>
          <section id="about" className={classes.aboutSection}>
             <h1 className={classes.title}>
                <span>About </span> Us

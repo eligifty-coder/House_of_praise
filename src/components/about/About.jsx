@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './About.module.css'
-import Overlay from  '../images/aboutOverlay.png'
+import Overlay from  '../../images/aboutOverlay.png'
 const About = () => {
    return (
       <div className={classes.about}>

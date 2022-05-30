@@ -1,10 +1,10 @@
 import React from 'react'
-import Cancel from '../images/cancel.png'
+import Cancel from '../../images/cancel.png'
 import classes from './NavItems.module.css'
-import Facebook from '../images/facebook.png'
-import Youtube from '../images/youtube.png'
-import Whatsapp from '../images/whatsapp.png'
-import Instagram from '../images/instagram.png'
+import Facebook from '../../images/facebook.png'
+import Youtube from '../../images/youtube.png'
+import Whatsapp from '../../images/whatsapp.png'
+import Instagram from '../../images/instagram.png'
 
 const NavItems = ({ cancelClick}) => {
    return (

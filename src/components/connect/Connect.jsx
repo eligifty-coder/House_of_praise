@@ -1,10 +1,10 @@
 import classes from './Connect.module.css'
-import Women from '../images/women.png'
-import Men from '../images/men.png'
-import Teen from '../images/teen.png'
-import Youth from '../images/youth.png'
-import ConnectSmall from '../images/connectImage.png'
-import ConnectBig from '../images/connectImageBig.png'
+import Women from '../../images/women.png'
+import Men from '../../images/men.png'
+import Teen from '../../images/teen.png'
+import Youth from '../../images/youth.png'
+import ConnectSmall from '../../images/connectImage.png'
+import ConnectBig from '../../images/connectImageBig.png'
 
 const Connect = () => {
    const connectArr = [

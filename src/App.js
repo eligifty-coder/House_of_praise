@@ -6,6 +6,10 @@ import About from './components/about/About';
 import Connect from './components/connect/Connect';
 import Improve from './components/improve/Improve'
 import Program from './components/programs/Program'
+import Event from './components/events/Event';
+
+
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +18,7 @@ function App() {
       <Connect />
       <Improve />
       <Program />
+      <Event/>
     </div>
   );
 }

@@ -11,7 +11,6 @@ const Program = () => {
       const time = new Date().getDay()
       setTimeStamp(weekdays[time])
    },[timeStamp])
-   console.log(timeStamp, 'q')
    const [program, setProgram] = useState(programLists)
    const mappedLists = program.map((item, index) => {
       const background = timeStamp === item.day ? `#FC3C3C` : '#FFEBEB'

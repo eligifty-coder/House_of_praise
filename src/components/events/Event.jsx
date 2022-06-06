@@ -14,6 +14,7 @@ import right from '../../images/right.png'
 const Event = () => {
    const [click, setClick] = useState(false)
    const [index, setIndex] = useState(0)
+   const [count, setCount] = useState(0)
    const imageArrs =[image, image2,image3]
    const eventArray = [
       { year:'2022', month: 'Oct', day: 12, time: '8:00am', title: 'Thanksgiving Service', action: 'Find out more' },
@@ -21,6 +22,21 @@ const Event = () => {
       { year: '2022', month: 'Nov', day: 14, time: '2:00am', title: 'Thanksgiving Service', action: 'Find out more' },
       { year: '2022', month: 'Dec', day: 15, time: '7:00am', title: 'Thanksgiving Service', action: 'Find out more' }
    ]
+   const handleImgLoop = () => {
+      setCount(prev => prev + 1)
+      if (count >= imageArrs.length - 1) {
+         setCount(imageArrs.length - 1)
+         return
+      }
+   }
+
+   const handleLoopBack = () => {
+      setCount(prev => prev - 1)
+      if (count <= 0) {
+         setCount(0)
+         return
+      }
+   }
    const handleNewer = () => {
       setIndex(index - 1)
       if (index <= 0) {
@@ -63,9 +79,13 @@ const Event = () => {
          <a href="#event">{singleItem.action}</a>
       </div>
    </article>
-   const singleImage = imageArrs[0]
-   const imageArticle = <article>
-
+   const singleImage = imageArrs[count]
+   const imageArticle = <article className={classes.gallery}>
+      <div className={classes.imgAction}>
+         <img src={left} alt="left" onClick={handleLoopBack} />
+         <img src={right} alt="right" onClick={handleImgLoop} />
+      </div>
+      <img src={singleImage} alt="event" className={classes.mainImage}/>
    </article>
    const mappedEvents = eventArray.map((singleItem, index) => {
       return (
@@ -100,7 +120,8 @@ const Event = () => {
                <ul>
                   {!click &&  smallDisplay}
                   
-                  {!click &&  mappedEvents}
+                  {!click && mappedEvents}
+                  {click && imageArticle}
                </ul>
                {!click && <div className={classes.navigate}>
                   <div className={classes.move}>

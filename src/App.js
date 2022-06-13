@@ -7,7 +7,7 @@ import Connect from './components/connect/Connect';
 import Improve from './components/improve/Improve'
 import Program from './components/programs/Program'
 import Event from './components/events/Event';
-
+import Giving from './components/giving/Giving';
 
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
       <Connect />
       <Improve />
       <Program />
-      <Event/>
+      <Event />
+      <Giving/>
     </div>
   );
 }

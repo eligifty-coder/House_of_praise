@@ -1,10 +1,31 @@
 import React from 'react'
+import { useState } from 'react'
 import classes from './Giving.module.css'
 import givingLoop from '../../images/givingLoop.png'
 import loopSmall from '../../images/loopSmall.png'
 import copyIcon from '../../images/copy.png'
 
 const Giving = () => {
+   const [isCopied, setIsCopied] = useState(false);
+   async function copyTextToClipboard(text) {
+      if ('clipboard' in navigator) {
+         return await navigator.clipboard.writeText(text);
+      } else {
+         return document.execCommand('copy', true, text);
+      }
+   }
+   const handleClick = (text) => {
+      copyTextToClipboard(text) 
+         .then(() => {
+            setIsCopied(true);
+            setTimeout(() => {
+               setIsCopied(false);
+            }, 1500);
+         })
+         .catch((err) => {
+            console.log(err);
+         });
+   }
    return (
       <div className={classes.giving} >
          <section className={classes.header} >
@@ -23,7 +44,7 @@ const Giving = () => {
                      </div>
                      <div className={classes.right}>
                         <h4>ACCOUNT NUMBER:</h4>
-                        <h1>20275032226   <img src={copyIcon} alt="copy" /></h1>
+                        <h1>20275032226   <img src={copyIcon} alt="copy" onClick={() => handleClick(20275032226)} /></h1>
                      </div>
                   </div>
                   <div className={classes.bottom} >

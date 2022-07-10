@@ -9,6 +9,8 @@ import Program from './components/programs/Program'
 import Event from './components/events/Event';
 import Giving from './components/giving/Giving';
 import Ministry from './components/ministry/Ministry';
+import Live from './components/Live/Live';
+import Leadership from './components/leadership/Leadership';
 function App() {
   return (
     <div className="App">
@@ -20,6 +22,7 @@ function App() {
       <Event />
       <Giving />
       <Ministry />
+      <Live />
     </div>
   );
 }

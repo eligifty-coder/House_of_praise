@@ -5,6 +5,7 @@
       display: grid;
       align-items: center;
       row-gap: 10.53vw;
+      padding-bottom: 17vw;
    }
    .title{
       width: 100%;

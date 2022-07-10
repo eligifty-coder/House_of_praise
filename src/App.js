@@ -8,8 +8,7 @@ import Improve from './components/improve/Improve'
 import Program from './components/programs/Program'
 import Event from './components/events/Event';
 import Giving from './components/giving/Giving';
-
-
+import Ministry from './components/ministry/Ministry';
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,8 @@ function App() {
       <Improve />
       <Program />
       <Event />
-      <Giving/>
+      <Giving />
+      <Ministry />
     </div>
   );
 }

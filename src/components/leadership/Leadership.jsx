@@ -63,12 +63,14 @@ const Leadership = () => {
    })
    return (
       <div className={classes.leadership} id='leadership'>
-         <header>
+         <header className={classes.title} >
             <h1>Leadership</h1>
          </header>
          <section className={classes.content}>
-            <article>
-               <img src={Mavi} alt="mavi" />
+            <article className={classes.rev}>
+               <div className={classes.mavImg}>
+                  <img src={Mavi} alt="mavi" />
+               </div>
                <div className={classes.maviBio}>
                   <h3>Raise up an army for me, to go with the gospel to all Nations. Gather together those whom I
                      have called
@@ -77,13 +79,14 @@ const Leadership = () => {
                   <p>House of Praise is set up by God to raise, restore and equip a people to the complete and full
                      standard of Christ and is
                      led by Reverend Mavi Sokia Isibor and a team of ministers who are committed to the God-given mandate.</p>
-                  <div className={classes.detail}>
-                     <h2>Pastor Jane Doe</h2>
-                     <p>Head Pastor</p>
-                  </div>
                </div>
+               <div className={classes.detail}>
+                  <h2>Pastor Jane Doe</h2>
+                  <p>Head Pastor</p>
+               </div>
+
             </article>
-            <div className={`${classes.pastors}${classes.small}`}>
+            <div className={`${classes.pastors} ${classes.small}`}>
                <article className={classes.pastor}>
                   <img src={pastors[count].img} alt="identity" />
                   <div className={classes.details}>
@@ -92,12 +95,18 @@ const Leadership = () => {
                   </div>
                </article>
                <div className={classes.navigation} >
-                  <button>
-                     <img src={ChevronPrev} alt="prev" />
-                  </button>
-                  <button>
-                     <img src={ChevronNext} alt="next" />
-                  </button>
+                  <div className={classes.prev}>
+                     <button onClick={handlePrev}>
+                        <img src={ChevronPrev} alt="prev" />
+                     </button>
+                     <span>Previous</span>
+                  </div>
+                  <div className={classes.next} >
+                     <button onClick={handleNext}>
+                        <img src={ChevronNext} alt="next" />
+                     </button>
+                     <span>Next</span>
+                  </div>
                </div>
             </div>
          </section>

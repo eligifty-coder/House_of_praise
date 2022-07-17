@@ -67,12 +67,12 @@
    }
 
    .actions button {
+      width: 100%;
       outline: none;
       border: none;
       background: transparent;
       border: 0.26vw solid #FC3C3C;
       border-radius: 8.53vw;
-      padding: 4.26vw 6.4vw;
       font-family: 'Nunito Sans';
       font-style: normal;
       font-weight: 400;

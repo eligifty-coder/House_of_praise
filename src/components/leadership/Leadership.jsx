@@ -80,8 +80,12 @@ const Leadership = () => {
                   <p>House of Praise is set up by God to raise, restore and equip a people to the complete and full
                      standard of Christ and is
                      led by Reverend Mavi Sokia Isibor and a team of ministers who are committed to the God-given mandate.</p>
+                  <div className={`${classes.detail} ${classes.detailBig}`}>
+                     <h2>Pastor Jane Doe</h2>
+                     <p>Head Pastor</p>
+                  </div>
                </div>
-               <div className={classes.detail}>
+               <div className={`${classes.detail} ${classes.detailSmall}`}>
                   <h2>Pastor Jane Doe</h2>
                   <p>Head Pastor</p>
                </div>

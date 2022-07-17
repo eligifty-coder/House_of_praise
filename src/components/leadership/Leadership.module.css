@@ -5,7 +5,7 @@
 }
 @media screen and (max-width: 601px) {
    .leadership{
-      width: 90vw;
+      width: 91.4vw;;
       margin: 0 auto;
       padding-top: 14.93vw;
       display: grid;
@@ -37,7 +37,7 @@
       row-gap: 6.4vw;
    }
    .rev .mavImg{
-      width: 90vw;
+      width: 91.4vw;;
       border-radius: 2.133vw;
    }
    .rev img{
@@ -54,7 +54,7 @@
       row-gap: 4.26vw;
    }
    .maviBio h3{
-      width: 90vw;
+      width: 91.4vw;;
       font-family: 'Merriweather';
       font-style: normal;
       font-weight: 700;
@@ -64,7 +64,7 @@
       color: #5A5656;
    }
    .maviBio p{
-      width: 90vw;
+      width: 91.4vw;;
       font-family: 'Nunito Sans';
       font-style: normal;
       font-weight: 400;
@@ -75,7 +75,7 @@
       padding-bottom: 6.4vw;
    }
    .detail{
-      width: 90vw;
+      width: 91.4vw;;
       display: grid;
       align-items: center;
       row-gap: 2.13vw;
@@ -107,10 +107,10 @@
       line-height: 5.06vw;
       letter-spacing: -0.025em;
       color: #5A5656;
-      width: 90vw;
+      width: 91.4vw;;
    }
    .content{
-      width: 90vw;
+      width: 91.4vw;;
       display: grid;
       align-items: center;
       row-gap: 10.66vw;
@@ -121,7 +121,7 @@
       row-gap: 6.4vw;
    }
    .small .pastor {
-      width: 90vw;
+      width: 91.4vw;;
       display: grid;
       align-items: center;
       row-gap: 4.4vw;
@@ -191,8 +191,131 @@
       align-items: center;
    }
    .navigation{
-      width: 90vw;
+      width: 91.4vw;;
       display: flex;
       justify-content: space-between;
+   }
+   .big{
+      display: none;
+   }
+}
+
+@media screen and (min-width: 602px) {
+   .small{
+      display: none;
+   }
+   .leadership{
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 8.33vw;
+      display: grid;
+      align-items: center;
+      row-gap: 3.33vw;
+      /* row-gap: 8.53vw; */
+   }
+   .leadership .title h1{
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.77vw;
+      line-height: 3.47vw;
+      letter-spacing: -0.025em;
+      color: #000000;
+      position: relative;
+      width: 100%;
+   }
+   .leadership .title h1::after{
+      background: #FC3C3C;
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 7.22vw;
+      height: 0.27vw;
+      top: 4.58vw;
+   }
+   .content{
+      display: grid;
+      align-items: center;
+      row-gap: 2.22vw;
+   }
+   .content .rev{
+      display: grid;
+      align-items: center;
+      grid-template-columns: auto 1fr;
+      -moz-column-gap: 2.77vw;
+         column-gap: 2.77vw;
+   }
+   .content .mavImg{
+      width: 45vw;
+   }
+   .content .mavImg img{
+      width: 100%;
+   }
+   .content .maviBio{
+      display: grid;
+      align-items: center;
+      row-gap: 1.66vw;
+   }
+   .content .maviBio h3{
+      width: 42.22vw;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.66vw;
+      line-height: 150%;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+   }
+   .content .maviBio p{
+      width: 42.22vw;
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.38vw;
+      line-height: 1.87vw;
+      letter-spacing: -0.025em;
+      color: #1F1F1F;
+   }
+   .content .big{
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      -moz-column-gap: 0.90vw;
+         column-gap: 0.90vw;
+   }
+   .content .big .pastor{
+      display: grid;
+      align-items: center;
+      row-gap: 2.22vw;
+   }
+   .content .big .pastor img{
+      width: 21.80vw;
+      height: 16.9vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+      /* background: red; */
+   }
+   .content .big .pastor .details {
+      display: grid;
+      align-items: center;
+      row-gap: 0.55vw;
+   }
+   .content .big .pastor .details h1 {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.66vw;
+      line-height: 2.08vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
+   }
+   .content .big .pastor .details p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.11vw;
+      line-height: 1.52vw;
+      letter-spacing: -0.025em;
+      color: #5A5656;
    }
 }

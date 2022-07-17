@@ -10,20 +10,7 @@ import ChevronPrev from '../../images/chevron_prev.png'
 import ChevronNext from '../../images/chevron_next.png'
 
 const Leadership = () => {
-   const [count, setCount] = useState(0)
-   const handlePrev = () => {
-      setCount(prev => prev - 1)
-      if (count === 0) {
-         setCount(0)
-      }
-   }
-   const handleNext = () => {
-      setCount(prev => prev + 1)
-      if (count >= count.length - 1) {
-         const length = count.length-1
-         setCount(length)
-      }
-   }
+   
    const pastors = [
       {
          name: 'Pastor Rotimi',
@@ -51,12 +38,26 @@ const Leadership = () => {
          img: Ehis
       },
    ]
+   const [count, setCount] = useState(0)
+   const handlePrev = () => {
+      setCount(prev => prev - 1)
+      if (count === 0) {
+         setCount(0)
+      }
+   }
+   const handleNext = () => {
+      setCount(prev => prev + 1)
+      if (count >= pastors.length - 1) {
+         const length = pastors.length - 1
+         setCount(length)
+      }
+   }
    const mappedPastors = pastors.map((pastor, id) => {
       return <article className={classes.pastor} key={id}>
          <img src={pastor.img} alt="identity" />
          <div className={classes.details}>
-            <h1>Pastor {pastor.name}</h1>
-            <p>Pastor {pastors.title}</p>
+            <h1> {pastor.name}</h1>
+            <p> {pastor.title}</p>
          </div>
          
       </article>
@@ -86,11 +87,14 @@ const Leadership = () => {
                </div>
 
             </article>
+            <div className={classes.big} >
+               {mappedPastors}
+            </div>
             <div className={`${classes.pastors} ${classes.small}`}>
                <article className={classes.pastor}>
                   <img src={pastors[count].img} alt="identity" />
                   <div className={classes.details}>
-                     <h1>Pastor {pastors[count].name}</h1>
+                     <h1> {pastors[count].name}</h1>
                      <p>Pastor {pastors[count].title}</p>
                   </div>
                </article>

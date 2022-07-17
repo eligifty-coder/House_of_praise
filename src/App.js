@@ -23,6 +23,7 @@ function App() {
       <Giving />
       <Ministry />
       <Live />
+      <Leadership/>
     </div>
   );
 }

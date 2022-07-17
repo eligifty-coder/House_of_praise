@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from './Leadership.module.css'
 import Mavi from '../../images/mavi.png'
 import Rotimi from '../../images/rotimi.png'
@@ -6,7 +6,24 @@ import Patrick from '../../images/patrick.png'
 import Saraphina from '../../images/saraphina.png'
 import Ehis from '../../images/saraphina.png'
 import Ik from '../../images/ik.png'
+import ChevronPrev from '../../images/chevron_prev.png'
+import ChevronNext from '../../images/chevron_next.png'
+
 const Leadership = () => {
+   const [count, setCount] = useState(0)
+   const handlePrev = () => {
+      setCount(prev => prev - 1)
+      if (count === 0) {
+         setCount(0)
+      }
+   }
+   const handleNext = () => {
+      setCount(prev => prev + 1)
+      if (count >= count.length - 1) {
+         const length = count.length-1
+         setCount(length)
+      }
+   }
    const pastors = [
       {
          name: 'Pastor Rotimi',
@@ -34,9 +51,13 @@ const Leadership = () => {
          img: Ehis
       },
    ]
-   const mappedPastors = pastors.map(pastor => {
-      return <article className={classes.pastor}>
-         <img src={pastor.img} alt='pastor' />
+   const mappedPastors = pastors.map((pastor, id) => {
+      return <article className={classes.pastor} key={id}>
+         <img src={pastor.img} alt="identity" />
+         <div className={classes.details}>
+            <h1>Pastor {pastor.name}</h1>
+            <p>Pastor {pastors.title}</p>
+         </div>
          
       </article>
    })
@@ -62,7 +83,23 @@ const Leadership = () => {
                   </div>
                </div>
             </article>
-            <div className={classes.pastors}></div>
+            <div className={`${classes.pastors}${classes.small}`}>
+               <article className={classes.pastor}>
+                  <img src={pastors[count].img} alt="identity" />
+                  <div className={classes.details}>
+                     <h1>Pastor {pastors[count].name}</h1>
+                     <p>Pastor {pastors[count].title}</p>
+                  </div>
+               </article>
+               <div className={classes.navigation} >
+                  <button>
+                     <img src={ChevronPrev} alt="prev" />
+                  </button>
+                  <button>
+                     <img src={ChevronNext} alt="next" />
+                  </button>
+               </div>
+            </div>
          </section>
       </div>
    )

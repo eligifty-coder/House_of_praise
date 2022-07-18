@@ -204,8 +204,9 @@
 @media screen and (min-width: 602px) {
    .small,
    .detailSmall {
-      display: none;
+      display: none !important;
    }
+
    .leadership{
       width: 90vw;
       margin: 0 auto;
